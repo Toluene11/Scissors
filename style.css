@@ -1,0 +1,746 @@
+@font-face {
+    font-family: "gilroy";
+    src: url(fonts/Gilroy-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "gilroy";
+    src: url(fonts/Gilroy-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "gilroy";
+    src: url(fonts/Gilroy-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "gilroy";
+    src: url(fonts/Gilroy-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "gilroy";
+    src: url(fonts/Gilroy-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "gilroy" sans-serif;
+    color: #141414;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #141414;
+
+}
+
+.page_wrapper {
+    overflow: hidden;
+}
+
+.padding-global {
+    padding: 1rem 3rem;
+}
+
+/* Navigation */
+
+.nav-container {
+    margin: auto;
+    max-width: 1200px;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link-wrapper {
+    display: flex;
+}
+
+.nav-link {
+    font-family: "gilroy";
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.flex-link {
+    font-family: "gilroy";
+    font-weight: 500;
+    display: flex;
+    padding: 1rem;
+    gap: 0.1rem;
+}
+
+.feature-dropdown {
+    padding-top: -10px;
+}
+
+.cta-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primary-btn {
+    font-family: "gilroy";
+    font-weight: 600;
+    background-color: #0065fe;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+}
+
+.tertiary-btn {
+    font-family: "gilroy";
+    font-weight: 600;
+    background-color: white;
+    color: #0065fe;
+    border: none;
+    padding: 12 0 12 24;
+}
+
+/* Hero */
+
+.hero-wrapper {
+    position: relative;
+}
+
+.aurora {
+    position: absolute;
+    top: 0;
+}
+
+.heroContainer {
+    margin: 3rem auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-header {
+    font-family: "gilroy";
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: #141414;
+    line-height: 96px;
+    margin-bottom: 0.5rem;
+}
+
+.text-span {
+    color: #005ae2;
+}
+
+.hero-subtext {
+    color: var(--text-color-main-text, #141414);
+    text-align: center;
+    font-size: 16px;
+    font-family: "gilroy";
+    font-weight: 500;
+    line-height: 28px;
+    width: 40rem;
+}
+
+.header-styling {
+    position: relative;
+}
+
+.header-line-style {
+    position: absolute;
+    left: 43%;
+    bottom: 5%;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.link-img-text {
+    display: inline-flex;
+    padding: 40px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 24px;
+    border: 0.5px solid var(--primary-400, #005ae2);
+    background: rgba(254, 254, 254, 0.1);
+    backdrop-filter: blur(106px);
+    position: absolute;
+    left: 35%;
+}
+
+.link-img-text img {
+    width: 384px;
+}
+
+.link-img-container {
+    position: relative;
+    z-index: 1;
+}
+
+.link-bg {
+    position: relative;
+    left: 34.5%;
+    bottom: 15px;
+}
+
+.social-proof-container {
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+}
+
+h2 {
+    font-family: "gilroy";
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.social-details-wrapper {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.social-details-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-family: "Gilroy";
+}
+
+.head-social-text {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.sub-social-text {
+    font-weight: 400;
+}
+
+#second-proof {
+    width: 123px;
+}
+
+#third-proof {
+    width: 143px;
+}
+
+.social-details-wrapper :last-child {
+    width: 123px;
+}
+
+.social-details-wrapper :first-child {
+    width: 88px;
+}
+
+.social-proof {
+    background: #f9fbfd;
+    margin-top: -5px;
+}
+
+.header-line {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 450px;
+}
+
+.why-us-container {
+    width: 1200px;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.why-us-text {
+    width: 400px;
+}
+
+.why-us-text-par {
+    color: var(--text-color-main-text, #141414);
+    font-size: 16px;
+    font-family: "gilroy";
+    line-height: 28px;
+    padding-left: 1rem;
+    width: 370px;
+    padding-top: 1rem;
+}
+
+.why-us-details-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sub-why-us {
+    font-family: "gilroy";
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub-why-us-head {
+    color: var(--text-color-main-text, #141414);
+    font-size: 32px;
+    font-family: "gilroy";
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.sub-why-us-par {
+    color: var(--text-color-main-text, #141414);
+    font-size: 16px;
+    font-family: "gilroy";
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.why-d-contain {
+    display: grid;
+    row-gap: 4.5rem;
+    column-gap: 2rem;
+    grid-template-columns: auto auto;
+}
+
+.pricing-text {
+    width: 600px;
+    text-align: center;
+}
+
+#pricing-width {
+    width: 600px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 2rem auto 6rem auto;
+    gap: 6rem;
+}
+
+.pricing-card-container {
+    display: flex;
+    align-items: center;
+}
+/*
+.pricing-card-container :first-child {
+    margin-right: -1rem;
+}
+
+.pricing-card-container :last-child {
+    margin-left: rem;
+}
+*/
+
+.plan-detail {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.pricing-text-par {
+    color: var(--text-color-main-text, #141414);
+    text-align: center;
+    font-size: 16px;
+    font-family: "gilroy";
+    line-height: 24px;
+    margin-top: 0.5rem;
+}
+
+.pricing-idle-card {
+    display: inline-flex;
+    padding: 24px 98px 45px 87px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 12px;
+    border: 0.4px solid var(--primary-400, #005ae2);
+    background: var(--neutral-white, #fff);
+    width: 379px;
+    z-index: 2;
+    height: 455px;
+    /* Drop shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.plan-pricing {
+    text-align: center;
+    font-size: 24px;
+    font-family: Gilroy-Medium;
+    line-height: 32px;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-family: "gilroy";
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.plan-price-text {
+    font-family: "gilroy";
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.plan-detail-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plan-offering {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.offering-text {
+    text-align: center;
+    font-size: 14px;
+    font-family: "gilroy";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.plan-detail-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#pricing-card {
+    padding: 26px 66px 43px 80px;
+}
+
+.pricing-active-card {
+    min-width: 410px;
+    color: white !important;
+    display: inline-flex;
+    padding: 95px 106px 148px 65px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 12px;
+    background: var(--linear-gradient, linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%));
+    position: relative;
+    z-index: 5;
+    /* Drop shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-cta {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.secondary-btn {
+    font-family: "gilroy";
+    background-color: white;
+    color: #0065FE;    
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid var(--primary-300-base, #0065FE);
+    padding: 12px 24px;
+    border-radius: 100px;
+}
+
+.form {
+    width: auto;
+    height: 525px;
+    background-image: url(assets/form-bg.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 476px;
+    height: 355px;
+    display: inline-flex;
+    padding: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 12px;
+    background: white;
+}
+
+.form-input {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-family: 'gilroy';
+    font-weight: 500;
+    height: 55px;
+    border-radius: 12px;
+    border: 1px solid var(--primary-100, #3284FF);
+}
+
+.form-input::placeholder {
+    color: #3284FF;
+}
+
+#paste-url {
+    width: 392px;
+}
+
+.input-2-wrapper {
+    display: flex;
+    gap: 0.75rem;
+    width: 392px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 392px;
+}
+
+/* Choose Domain btn needs more work */
+.dropdown-btn {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 202px;
+    color: #3284FF;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--primary-100, #3284FF);
+}
+/* the css code above*/
+
+#alias {
+    width: 178px;
+}
+
+.form-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#form-btn {
+    font-family: "gilroy";
+    font-weight: 600;
+    background-color: #0065fe;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    width: 392px;
+}
+
+.condition-text {
+    font-family: 'gilroy';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    color: #4991FF;
+}
+
+#text-span {
+    font-family: 'gilroy';
+    font-weight: 500;
+}
+
+.faqs {
+    gap: 4rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: auto;
+    height: 1153px;
+    background-image: url(assets/FAQs.svg);
+}
+
+.faqs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-active {
+    width: 792px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#faqs-header {
+    width: 120px;
+}
+
+.question-wrapper {
+    font-family: 'gilroy';
+    display: flex;
+    justify-content: space-between;
+    width: 792px;
+}
+
+#answer {
+    font-family: 'gilroy';
+    font-weight: 400;
+    line-height: 32px;
+}
+#question {
+    font-family: 'gilroy';
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.faq-line {
+    height: 1px;
+    background-color: #D6D6D6;
+    align-self: stretch;
+}
+
+#question6 {
+    width: 740px;
+    font-family: 'gilroy';
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.cta-banner {
+    gap: 4rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center;
+    width: auto;
+    height: 300px;
+    background-image: url(assets/cta-banner.svg);
+}
+
+.banner-cta-text {
+    font-family: 'gilroy';
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 48px;
+}
+
+.banner-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'gilroy';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#banner-btn {
+    max-width: 200px;
+}
+
+.footer {
+    background-image: url(assets/footer.svg);
+    height: 561px;
+    width: auto;
+    padding: 4rem 0;
+}
+.footer-logo-wrapper {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.footer-pack {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 220px;
+}
+
+.pack-head {
+    font-family: 'gilroy';
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.pack-par {
+    font-family: 'gilroy';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.overall-wrapper {
+    margin: auto;
+    display: flex;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.pack-par-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footerlink-main-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.last-item {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+}
+
+#footer-last-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
